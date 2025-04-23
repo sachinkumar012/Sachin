@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Achievements</title>
+  <link rel="stylesheet" href="achievement.css"/>
+</head>
+<body>
+
+  
+  <!-- <header class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="certification.html">certification</a></li>
+      <li><a href="achievement.html">Achievements</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </header> -->
+
+  <header>
+    <nav>
+      <h1>&lt;Sachin Kumar/&gt;</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certification.html">certification</a></li>
+            <li><a href="achievement.html">Achievements</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Achievements Section -->
+  <section class="achievements-section">
+    <h1 class="section-title">🏆 Achievements</h1>
+    <div class="achievements-container">
+      
+      <div class="achievement-card">
+        <img src="./asserts/gfgf.png" alt="AI Hackathon" />
+        <h3>GeeksforGeeks</h3>
+        <p>Solved over 200+ DSA Problems
+            Successfully solved 214 problems on GeeksforGeeks, demonstrating consistent practice and strong problem-solving skills.
+            
+            Coding Score of 335
+            Achieved a Coding Score of 335, reflecting proficiency in competitive programming with C++ and Java.
+            
+            5623rd Rank in Lovely Professional University (LPU)
+            Ranked 5573 among all peers from Lovely Professional University on GeeksforGeeks, showcasing active participation in coding challenges.</p>
+        <span>2025</span>
+        <a href="https://www.geeksforgeeks.org/user/sachinyadt91a/" class="cv-btn">Click here</a>
+      </div>
+  
+      <div class="achievement-card">
+        <img src="./asserts/hacjer.png" alt="Best Paper Award" />
+        <h3>hackerRank</h3>
+        <p> Earned 3 Skill Badges
+            Secured badges in Java, Python, and SQL — showcasing proficiency in multiple programming languages.
+            Certified in 3 Key Areas
+            Verified certifications in:
+            
+            SQL (Intermediate)
+            
+            Problem Solving (Intermediate)
+            
+            Java (Basic)
+            Demonstrates strong foundational and intermediate-level coding skills.
+            Profile Completion at 60%
+            Actively working on profile growth and certification, with 60% completion, indicating dedication to continuous learning.</p>
+        <span>2025</span>
+        <a href="https://www.hackerrank.com/profile/sachinyadav88773" class="cv-btn">Click here</a>
+      </div>
+  
+      <!-- <div class="achievement-card">
+        <img src="images/leetcode.jpg" alt="LeetCode Achievement" />
+        <h3>Top 5% on LeetCode</h3>
+        <p>Ranked in top 5% of global LeetCode coders, solving 1000+ problems.</p>
+        <span>2021</span>
+      </div> -->
+  
+    </div>
+  </section>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    document.querySelectorAll('.achievement-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+  
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f2f7;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #001f3f;
+    font-weight: 500;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #001f3f;
+  } */
+
+
+
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eaf6ff;
+    color: #1e1e1e;
+  }
+  
+  header {
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #003366;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #1da1f2;
+  }
+
+
+  
+  .projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+  }
+  
+  .project-image {
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  .text h1 {
+    font-size: 40px;
+    color: #002b5c;
+    margin-bottom: 20px;
+  }
+  
+  .text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+  
+
+/* 
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ecf5f9;
+    margin: 0;
+    padding: 20px;
+    color: #012b47;
+  } */
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  
+  .project-card {
+    background-color: #b4e5f6;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #001a35;
+  }
+  
+  .project-card p {
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+  
+  .project-card .icons {
+    margin-bottom: 8px;
+  }
+  
+  .project-card .icons span {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .project-card small {
+    font-size: 12px;
+    color: #023047;
+  }
+  
+  .more-btn {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .more-btn button {
+    background-color: #012b47;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .more-btn button:hover {
+    background-color: #01456a;
+  }
+  
+
+
+  /* Image styling and animation */
+.project-image {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 3px solid #1dbac5; /* Matches light blue background */
+    background-color: #e6f2f7; /* Inner background match */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  
+  /* Entry animation */
+  .animated-image {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInY 1s ease-out forwards;
+  }
+  
+  @keyframes slideInY {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .project-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  }
+    

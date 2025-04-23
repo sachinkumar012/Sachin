@@ -1,0 +1,335 @@
+/* Global Styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #eaf6fa;
+    color: #0f172a;
+    line-height: 1.6;
+  }
+  
+   
+ 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0f172a;
+    font-family: cursive;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar ul li a:hover,
+  .navbar ul li a.active {
+    border-bottom: 2px solid #0f172a;
+  } */
+  
+
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eaf6ff;
+    color: #1e1e1e;
+  }
+  
+  header {
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #003366;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #1da1f2;
+  }
+
+
+
+
+  /* Education Section */
+  .education-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .education-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+  .education-image img {
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  .education-text {
+    max-width: 600px;
+  }
+  
+  .education-text h2 {
+    font-size: 2.5rem;
+    color: #0f172a;
+    margin-bottom: 15px;
+  }
+  
+  .education-text p {
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 20px;
+  }
+  
+  .cert-logos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cert-logos img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .cert-logos img:hover {
+    transform: scale(1.15);
+  }
+  
+  /* Degrees Title */
+  .degrees-title {
+    font-size: 1.8rem;
+    margin-top: 50px;
+    color: #0f172a;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .education-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+  
+
+
+
+
+  /* body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2f9;
+    padding: 20px;
+  }
+   */
+  .education-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    align-items: flex-start;
+  }
+/*   
+  .logo {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  } */
+  
+  .content {
+    flex-grow: 1;
+  }
+  
+  .header {
+    background-color: #5a9bd8;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .duration {
+    font-size: 14px;
+  }
+  
+  .bullet {
+    margin-bottom: 10px;
+  }
+  
+  .bullet::before {
+    content: "⚡";
+    margin-right: 8px;
+    color: orange;
+  }
+  
+  .visit-button {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #5a9bd8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 600px) {
+    .education-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo {
+      margin: 0 0 10px 0;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+
+
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    color: #0c2542;
+  }
+  
+  .certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px 40px;
+  }
+  
+  .cert-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .cert-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cert-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .cert-card p {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .cert-card span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    color: #555;
+  }
+  
