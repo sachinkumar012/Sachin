@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects</title>
   <link rel="stylesheet" href="project.css"/>
+  <link rel="stylesheet" href="bubble-background.css"/>
+  <script defer src="bubble-background.js"></script>
+  <link rel="stylesheet" href="portfolio-stamp-bg.css"/>
+  <script defer src="portfolio-stamp-bg.js"></script>
+  <style>
+    body {
+      background: #101624 !important;
+      color: #eaf6ff !important;
+    }
+    .projects-section, .projects {
+      background: linear-gradient(120deg, #18243a 60%, #1a2a3a 100%) !important;
+    }
+    .project-card {
+      background: #1a2333 !important;
+      color: #eaf6ff !important;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.25) !important;
+    }
+    .project-card h3, .project-card p, .project-card small {
+      color: #eaf6ff !important;
+    }
+    .nav-links a, .nav-links a:visited {
+      color: #7ecbff !important;
+    }
+    .nav-links a:hover {
+      color: #1da1f2 !important;
+    }
+    header, nav {
+      background: #151c2c !important;
+      color: #eaf6ff !important;
+    }
+    .text h1 {
+      color: #7ecbff !important;
+      background: none !important;
+      -webkit-background-clip: unset !important;
+    }
+    .project-image {
+      background: #101624 !important;
+    }
+  </style>
 </head>
 <body>
    <header>
@@ -25,66 +64,81 @@
 
   <main class="projects-section">
     <div class="content">
-      <img src="./asserts/project.jpg" alt="Project Diagram" class="project-image" style="border-radius: 20%; border-bottom: #fffd;"/>
+      <img src="./asserts/project.jpg" alt="Project Diagram" class="project-image animated-image" />
       <div class="text">
-        <h1>Projects</h1>
-        <p>My projects make use of a vast variety of the latest technology tools. My best experience is to Full-Stack projects and deploy them to web applications using github, Render infrastructure.</p>
+  <h1 style="font-size: 2.7rem; background: linear-gradient(90deg, #1da1f2 30%, #7ecbff 100%); -webkit-background-clip: text; color: transparent; font-weight: 800; letter-spacing: 2px;">My Projects</h1>
+  <p style="font-size: 1.2rem; color: #eaf6ff; margin-top: 10px;">A showcase of my best full-stack and SaaS projects, built with modern web technologies and a focus on real-world impact.</p>
       </div>
     </div>
   </main>
 
   
-  <section class="projects">
+  <section class="projects" style="margin-top: 30px; margin-bottom: 40px; background: linear-gradient(120deg, #eaf6ff 60%, #b4e5f6 100%); border-radius: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.08); padding: 32px 0;">
 
     <div class="project-card">
-        <a href="https://sachinkumar012.github.io/Recycle-mart/" target="_blank">
-          <img src="./asserts/recycleMart.jpg" alt="Neuro Symbolic Sudoku Solver" class="project-image">
-        </a>
-        <h3>🧩Recycle-Mart</h3>
-        <p>Launched eco-friendly marketplace listing 100+ unique recycled products in a 6-week personal development. 
-            • Engineered admin panel managing 1000+ product entries, reducing manual update time by 60%. 
-            • Automated payment integration, reducing carbon cycle 70% and completely eliminating 100% defects. 
-            • Deployed code using GitHub Action and Render achieving 5-minute release cycles, 100% uptime. </p>
-        <div class="icons">
-          <!-- <span>🐍</span> -->
-        </div>
-        <small>Created on Feb 2025 - May 2025</small>
-      </div>
+      <a href="https://mern-pink-six.vercel.app/" target="_blank">
+        <img src="./asserts/affiliate-landing.png" alt="Affiliate++ Landing Page" class="project-image animated-image" style="margin-bottom: 12px; max-height: 220px; object-fit:cover; width:100%; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,0.10);">
+      </a>
+  <h3 style="font-size: 1.3rem; color: #7ecbff; margin-bottom: 8px;">🧩 Affiliate++ Full-Stack Affiliate Link Management</h3>
+      <p>
+        <span style="font-weight:600; color:#1da1f2;">Tech Stack:</span> React, Node.js (Express), JWT, Razorpay, Google SSO<br>
+  <span style="font-weight:600; color:#7ecbff;">Link:</span> <a href="https://mern-pink-six.vercel.app/" target="_blank" style="color:#1da1f2; text-decoration:underline;">https://mern-pink-six.vercel.app/</a><br>
+  <span style="font-weight:600; color:#7ecbff;">Date:</span> Feb’25<br>
+  <ul style="margin: 8px 0 0 18px; color:#eaf6ff;">
+          <li>Built a secure SaaS platform enabling affiliate marketers to create, categorize, and track shortened links with real-time click analytics.</li>
+          <li>Implemented role-based access for child accounts, JWT-based stateless auth (cookie-managed), and Google SSO for seamless login.</li>
+          <li>Designed REST APIs with Express using middleware for validation and authorization; integrated Razorpay with webhook-based payment flow supporting credit and subscription models.</li>
+        </ul>
+      </p>
+      <div class="icons"></div>
+  <small style="color:#7ecbff;">Created on Feb 2025</small>
+    </div>
+
+    <div class="project-card">
+      <a href="https://zwigato-frontend-v3dm.onrender.com/" target="_blank">
+        <img src="./asserts/food.png" alt="Zwigato" class="project-image animated-image" style="height: 220px;">
+      </a>
+  <h3 style="font-size: 1.3rem; color: #7ecbff; margin-bottom: 8px;">🧩 Zwigato – Full Stack Delivery Platform</h3>
+      <p>
+        <span style="font-weight:600; color:#1da1f2;">Tech Stack:</span> MERN Stack, REST APIs, JWT Authentication, STRIPE<br>
+  <span style="font-weight:600; color:#7ecbff;">Link:</span> <a href="https://zwigato-frontend-v3dm.onrender.com/" target="_blank" style="color:#1da1f2; text-decoration:underline;">https://zwigato-frontend-v3dm.onrender.com/</a><br>
+  <span style="font-weight:600; color:#7ecbff;">Date:</span> Jul’24<br>
+  <ul style="margin: 8px 0 0 18px; color:#eaf6ff;">
+          <li>Designed a full-stack note-taking application with 100% CRUD functionality, built using MongoDB, Express.js, React.js, and Node.js.</li>
+          <li>Implemented JWT-based user authentication and role-based access control, secured access for over 50+ test users during development.</li>
+          <li>Connected frontend and backend via Axios, ensured real-time sync and reducing API response by ~25%.</li>
+          <li>Optimized MongoDB queries with Mongoose ORM, improving database efficiency for frequent note retrieval by 40%.</li>
+        </ul>
+      </p>
+      <div class="icons"></div>
+  <small style="color:#7ecbff;">Created on Jul 2024</small>
+    </div>
+
+    <div class="project-card">
+      <a href="https://sachinkumar012.github.io/Recycle-mart/" target="_blank">
+        <img src="./asserts/recycleMart.jpg" alt="Recycle-Mart" class="project-image animated-image">
+      </a>
+  <h3 style="font-size: 1.3rem; color: #7ecbff; margin-bottom: 8px;">🧩 Recycle-Mart</h3>
+      <p>
+        <span style="font-weight:600; color:#1da1f2;">Tech Stack:</span> React, PHP, JavaScript, HTML, CSS<br>
+  <span style="font-weight:600; color:#7ecbff;">Link:</span> <a href="https://sachinkumar012.github.io/Recycle-mart/" target="_blank" style="color:#1da1f2; text-decoration:underline;">https://sachinkumar012.github.io/Recycle-mart/</a><br>
+  
+  <ul style="margin: 8px 0 0 18px; color:#eaf6ff;">
+          <li>Launched eco-friendly marketplace listing 100+ unique recycled products in a 6-week personal development.</li>
+          <li>Engineered admin panel managing 1000+ product entries, reducing manual update time by 60%.</li>
+          <li>Automated payment integration, reducing carbon cycle 70% and completely eliminating 100% defects.</li>
+          <li>Deployed code using GitHub Action and Render achieving 5-minute release cycles, 100% uptime.</li>
+        </ul>
+      </p>
+      <div class="icons"></div>
+  <small style="color:#7ecbff;">Created on Feb 2025 - May 2025</small>
+    </div>
       
 
-      <div class="project-card">
-        <a href="https://example.com/neuro-symbolic-sudoku-solver" target="_blank">
-          <img src="./asserts/food.png" alt="Neuro Symbolic Sudoku Solver" class="project-image" style="height: 220px;">
-        </a>
-        <h3>🧩 Food-del</h3>
-        <p> Implemented JWT-based user authentication and role-based access control, secured access for over 50+ test 
-            users during development. 
-            • Connected frontend and backend via Axios & Fetch API, ensured real-time sync and reducing API response lag 
-            by ~25%. 
-            • Optimized MongoDB queries with Mongoose ORM, improving database efficiency for frequent note retrieval by 
-            40%. </p>
-        <div class="icons">
-          <!-- <span>🐍</span> -->
-        </div>
-        <small>Created on Jul 2024 - Nov 2024</small>
-      </div>
+    
 
 
-      <div class="project-card">
-        <a href="https://example.com/neuro-symbolic-sudoku-solver" target="_blank">
-          <img src="./asserts/real.png" alt="Neuro Symbolic Sudoku Solver" class="project-image">
-        </a>
-        <h3>🧩Real-Estate</h3>
-        <p>Developed full-stack platform managing 1200+ property listing| optimized search filters for user preferences. 
-            • Built responsive React.js frontend| attained 95% users satisfaction in usability in testing session . 
-            • Created PHP backend with MongoDB | reduced data retrieval time by 40% for listing. 
-            • Stationed project on GitHub and Render | ensured 100% uptime during 4-week testing phase.</p>
-        <div class="icons">
-          <!-- <span>🐍</span> -->
-        </div>
-        <small>Created on Apr 2024 - June 2024</small>
-      </div>
-
+      
 
  
   </section>
