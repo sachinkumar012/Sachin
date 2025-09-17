@@ -1,7 +1,7 @@
 // Portfolio SVG Stamps for background
 function addPortfolioStamps() {
-  const bg = document.createElement('div');
-  bg.className = 'portfolio-stamp-bg';
+  const bg = document.createElement("div");
+  bg.className = "portfolio-stamp-bg";
   bg.innerHTML = `
     <svg class="stamp1" viewBox="0 0 220 220">
       <circle cx="110" cy="110" r="90" stroke-dasharray="8 8" />
@@ -22,4 +22,4 @@ function addPortfolioStamps() {
   `;
   document.body.appendChild(bg);
 }
-window.addEventListener('DOMContentLoaded', addPortfolioStamps);
+window.addEventListener("DOMContentLoaded", addPortfolioStamps);

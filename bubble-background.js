@@ -1,10 +1,10 @@
 // Bubble Background Animation
 function createBubbles(num = 18) {
-  const container = document.createElement('div');
-  container.className = 'bubble-background';
+  const container = document.createElement("div");
+  container.className = "bubble-background";
   for (let i = 0; i < num; i++) {
-    const bubble = document.createElement('div');
-    bubble.className = 'bubble';
+    const bubble = document.createElement("div");
+    bubble.className = "bubble";
     // Make bubbles very small: 8px to 18px
     const size = Math.random() * 10 + 8;
     bubble.style.width = `${size}px`;
@@ -16,4 +16,4 @@ function createBubbles(num = 18) {
   }
   document.body.appendChild(container);
 }
-window.addEventListener('DOMContentLoaded', () => createBubbles());
+window.addEventListener("DOMContentLoaded", () => createBubbles());
