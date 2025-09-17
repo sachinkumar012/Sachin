@@ -1,3 +1,66 @@
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .projects-section {
+    padding: 30px 5px;
+  }
+  .project-image {
+    width: 90vw;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+    background: #151c2c;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100vw;
+    display: none;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+  nav.open .nav-links {
+    display: flex;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #7ecbff;
+    font-size: 2rem;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    z-index: 1100;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .text h1 {
+    font-size: 1.5rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+  .project-card {
+    padding: 10px;
+  }
+  .project-image {
+    max-width: 95vw;
+  }
+}
 /* * {
     margin: 0;
     padding: 0;
