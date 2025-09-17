@@ -57,6 +57,17 @@
           <li><a href="contact.html">Contact Me</a></li>
         </ul>
       </nav>
+  <div class="nav-overlay" onclick="document.querySelector('nav').classList.remove('open')"></div>
+    <script>
+      // Close nav on link click (mobile)
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            document.querySelector('nav').classList.remove('open');
+          });
+        });
+      });
+    </script>
     </header>
 
     <!-- Achievements Section -->
